@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Trainer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Multiplication Trainer</h1>
+    <p class="subtitle">Use the difference of squares: (a+b)(a−b) = a² − b²</p>
+
+    <div class="question-area">
+      <p id="question" class="question">?</p>
+    </div>
+
+    <form id="answer-form" autocomplete="off">
+      <input
+        type="text"
+        id="answer-input"
+        inputmode="numeric"
+        pattern="[0-9\-]*"
+        placeholder="Your answer"
+        autofocus
+      />
+      <button type="submit">Check</button>
+    </form>
+
+    <p id="feedback" class="feedback"></p>
+    <p id="timer-display" class="timer-display"></p>
+    <button id="next-btn" class="hidden">Next question</button>
+  </main>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
